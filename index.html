@@ -14,8 +14,30 @@
 <body>
   <h1>Hello World!</h1>
   <p>Ini website pertama saya.</p>
-  <button onclick="alert('Tahniah!')">
-    Klik Saya!
-  </button>
+  
+<h2 id="nombor">0</h2>
+
+<button onclick="tambah()">
+  Klik Saya!
+</button>
+
+<button onclick="reset()">
+  Reset
+</button>
+
+<script>
+  let kiraan = 0;
+
+  function tambah() {
+    kiraan = kiraan + 1;
+    document.getElementById("nombor").innerText = kiraan;
+  }
+
+  function reset() {
+    kiraan = 0;
+    document.getElementById("nombor").innerText = kiraan;
+  }
+</script>
+
 </body>
 </html>
